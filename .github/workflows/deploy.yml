@@ -31,44 +31,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public
+          path: public  
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-```
-
----
-
-## 🔍 Verificaciones Importantes:
-
-### **1. En Settings → Pages:**
-
-Debe decir:
-```
-Source: GitHub Actions
-```
-
-**NO debe decir:**
-```
-Source: Deploy from a branch
-```
-
-Si dice "Deploy from a branch", cámbialo a **GitHub Actions**.
-
----
-
-### **2. Esperar a que el workflow termine**
-
-1. Ve a **Actions**
-2. Verifica que el último workflow terminó ✅
-3. Haz clic en el workflow
-4. Verifica que todos los pasos estén verdes
-
----
-
-### **3. URL correcta**
-
-Tu sitio debería estar en:
-```
-https://tu-usuario-o-organizacion.github.io/demo-repository/

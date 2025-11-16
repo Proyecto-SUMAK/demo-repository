@@ -1,6 +1,4 @@
-import pypandoc
-
-content = """# 🌿 **Proyecto SUMAK – Landing Page**
+🌿 **Proyecto SUMAK – Landing Page**
 
 <div align="center">
   
@@ -99,10 +97,3 @@ Ejemplos:
 
 ---
 
-## 📬 **Contacto**
-📧 sumak.startup@gmail.com
-"""
-
-output_path = "/mnt/data/README.md"
-pypandoc.convert_text(content, 'md', format='md', outputfile=output_path, extra_args=['--standalone'])
-output_path

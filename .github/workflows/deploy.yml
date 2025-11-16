@@ -31,7 +31,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public   # ← tu carpeta con index.html
+          path: public   # tu carpeta con index
 
       - name: Deploy to GitHub Pages
         id: deployment

@@ -32,7 +32,11 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
 <<<<<<< HEAD
+<<<<<<< HEAD
           path: public   
+=======
+          path: public  
+>>>>>>> parent of b7cfe0d (deploy)
 =======
           path: public  
 >>>>>>> parent of b7cfe0d (deploy)
